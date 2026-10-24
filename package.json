@@ -1,0 +1,23 @@
+{
+  "name": "@local/dsh-step-watchdog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Interrupt and re-drive an agent whose step stops making progress.",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale/*.json"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

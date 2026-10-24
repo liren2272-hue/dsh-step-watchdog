@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Step watchdog",
+    "description": "Interrupts an agent that stops making progress, then re-drives the task."
+  }
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="step watchdog">
+  <circle cx="24" cy="26" r="15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+  <path d="M24 26 L24 17" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+  <path d="M24 26 L31 30" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+  <path d="M18 10 L24 5 L30 10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M13 37 L8 43" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+</svg>

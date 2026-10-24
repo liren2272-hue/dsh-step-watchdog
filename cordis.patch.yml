@@ -1,0 +1,17 @@
+- insert:
+    - id: step-watchdog
+      name: '@local/dsh-step-watchdog'
+      config:
+        stallMs: 60000
+        # Compaction runs inside agent/pre-step, before the model request is even
+        # built, and emits nothing until it finishes. It is exempt from stallMs
+        # and only this ceiling may interrupt it. 0 = never interrupt it.
+        compactionMs: 300000
+        # 0 = never interrupt an in-flight tool (long tasks are tolerated);
+        # set to e.g. 300000 only if you also want truly hung tool calls caught.
+        inflightToolGraceMs: 0
+        tickMs: 5000
+        graceMs: 20000
+        maxRestartsPerTurn: 2
+        # 1 = every interrupt's re-drive message tells the human to switch models.
+        remindSwitchAfter: 1
